@@ -5,7 +5,7 @@ import datetime
 # Configurações necessárias para a requisição da API
 ESTACAO_CODIGO = "A707"
 API_URL = f"https://apialert-as.inmet.gov.br/dados/mobile/{ESTACAO_CODIGO}"
-MONGO_URI = "mongodb+srv://grupog20:vaWH5PDeaaVt3aAX@clusterpi.rhmul.mongodb.net/?retryWrites=true&w=majority&appName=ClusterPI"
+MONGO_URI = "mongodb+srv://grupog20:3QZ5sPOCK5o4hlS6@clusterpi.rhmul.mongodb.net/?retryWrites=true&w=majority&appName=ClusterPI"
 DATABASE_NAME = "dados"
 COLLECTION_NAME = "tempo_real"
 HEADERS = {
