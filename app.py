@@ -6,10 +6,10 @@ import os
 
 app = Flask(__name__)
 
-# --- Configurations ---
+# --- Configurações ---
 ESTACAO_CODIGO = "A707"
 API_URL = f"https://apialert-as.inmet.gov.br/dados/mobile/{ESTACAO_CODIGO}"
-MONGO_URI = os.getenv("MONGO_URI")  # stored securely in Render's Environment
+MONGO_URI = os.getenv("MONGO_URI")  # configurada via render
 DATABASE_NAME = "dados"
 COLLECTION_NAME = "tempo_real"
 HEADERS = {
