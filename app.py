@@ -27,7 +27,7 @@ def home():
 @app.route("/run", methods=["GET"])
 def run_script():
     try:
-        response = requests.get(API_URL, headers=HEADERS)
+        response = requests.get(API_URL, headers=HEADERS, verify=False)
         if response.status_code == 200:
             dados_json = response.json()
             previsao_10_dias = dados_json.get("10 dias", [])
