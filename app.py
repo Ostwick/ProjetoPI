@@ -3,6 +3,9 @@ import requests
 from pymongo import MongoClient
 import datetime
 import os
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 app = Flask(__name__)
 
